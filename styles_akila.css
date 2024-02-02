@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+ body{
+    font-family: "Spline Sans",sans-serif;
+    color: #777;
+    line-height: 1.7;
+ }
+
+ h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color:#222;
+ }
+
+ a{
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+ }
+
+ a:hover{
+    color: #F58d17;
+ }
+
+ img{
+    width: 100%;
+ }
+
+ section{
+   padding-top: 120px;
+   padding-bottom: 120px;
+ }
+
+ .shadow-on-hover{
+   transition: all 0.3s;
+ }
+
+ .shadow-on-hover:hover{
+   box-shadow: 0 10px 40px rgba(157, 153, 153, 0.1);
+ }
+
+ .navbar-nav .nav-item .nav-link{
+   color:#777
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+   color:#1a1818d8
+}
+
+
+ .btn{
+    border-radius: 0;
+    padding: 14px 38px;
+ }
+
+ .btn-brand{
+    color: white;
+    font-weight: 500;
+    border-color: #F58d17;
+    background-color: #F58d17;
+ }
+
+ .btn-brand:hover{
+    border-color: #bf6703;
+    background-color: #bf6703;
+    color: white;
+ }
+
+ .bg-cover{
+   background-position: center !important;
+   background-size: cover !important;
+   background-repeat: no-repeat !important;
+}
+
+ .slide-1{
+    background: linear-gradient(#04061d7b, #02040f86), url(../try/images/home1.jpg);
+ }
+ 
+ .slide-2{
+    background: linear-gradient(#0000007b, #00000086), url(../try/images/home2.jpg);
+ }
+
+ .slide-3{
+    background: linear-gradient(#0000007b, #00000086), url(../try/images/home3.jpg);
+ }
+
+#heroslider h6::after,
+#heroslider h6::before{
+   content: " ";
+   width: 40px;
+   height: 4px;
+   background-color: white;
+   display: inline-block;
+   margin: 10px;
+   vertical-align: middle;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+  background-color: rgba(0,0,0,0.6);
+  width: 40px;
+  height: 70px;
+  margin: auto;
+}
+
+#about.divider{
+   width: 60px;
+   height: 2px;
+   display: block;
+   background-color: #F58d17;
+}
+
+ .intro-text{
+   margin-bottom: 40px;
+   text-align: center;
+ }
+
+ .intro-text p{
+   max-width: 500px;
+   margin: 16px auto 0 auto;
+ }
+ 
+
+
+ #menu .nav-pills .nav-link{
+   background-color: rgb(255, 255, 255);
+   margin-left: 8px;
+   margin-right: 8px;
+   color: #222;
+   border-radius: 100px;
+   box-shadow: 0 10px 40px #1f1d1d;
+ }
+
+ #menu .nav-pills .nav-link.active{
+   background-color: #F58d17;
+   color: rgb(255, 255, 255);
+ }
+
+ .menu-item .stars{
+   color: #F58d17;
+ }

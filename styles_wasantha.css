@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+ body{
+    font-family: "Spline Sans",sans-serif;
+    color: #777;
+    line-height: 1.7;
+ }
+
+ h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color:#222;
+ }
+
+ a{
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+ }
+
+ a:hover{
+    color: #F58d17;
+ }
+
+ img{
+    width: 100%;
+ }
+
+ section{
+   padding-top: 120px;
+   padding-bottom: 120px;
+ }
+
+ .shadow-on-hover{
+   transition: all 0.3s;
+ }
+
+ .shadow-on-hover:hover{
+   box-shadow: 0 10px 40px rgba(157, 153, 153, 0.1);
+ }
+
+ .navbar-nav .nav-item .nav-link{
+   color:#777
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+   color:#1a1818d8
+}
+
+
+ .btn{
+    border-radius: 0;
+    padding: 14px 38px;
+ }
+
+ .btn-brand{
+    color: white;
+    font-weight: 500;
+    border-color: #F58d17;
+    background-color: #F58d17;
+ }
+
+ .btn-brand:hover{
+    border-color: #bf6703;
+    background-color: #bf6703;
+    color: white;
+ }
+
+ .intro-text{
+   margin-bottom: 40px;
+   text-align: center;
+ }
+
+ .intro-text p{
+   max-width: 500px;
+   margin: 16px auto 0 auto;
+ }
+ 
+#reservation .form-control{
+   border-radius: 0;
+}
+
+#reservation .form-control:focus{
+   box-shadow: none;
+   border-color: #F58d17;
+}
+
+#reservation input.form-control{
+   height: 47px;
+}
+
+.insta-img{
+   position: relative;
+   overflow: hidden;
+}
+
+.insta-img .insta-btn{
+   width: 90px;
+   height: 90px;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   top:50%;
+   left: 50%;
+   font-size: 34px;
+   transform: translate(-50%, -50%);
+   opacity: 0;
+}
+
+.insta-img img{
+   transition: all 0.4s;
+}
+
+.insta-img:hover img{
+   transform: scale(1.2);
+}
+
+.insta-img:hover .insta-btn{
+   opacity: 1;
+}

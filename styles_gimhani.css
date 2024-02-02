@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap');
+
+ body{
+    font-family: "Spline Sans",sans-serif;
+    color: #777;
+    line-height: 1.7;
+ }
+
+ h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color:#222;
+ }
+
+ a{
+    color: #222;
+    text-decoration: none;
+    transition: all 0.4s;
+    font-weight: 600;
+ }
+
+ a:hover{
+    color: #F58d17;
+ }
+
+ img{
+    width: 100%;
+ }
+
+ section{
+   padding-top: 120px;
+   padding-bottom: 120px;
+ }
+
+ .shadow-on-hover{
+   transition: all 0.3s;
+ }
+
+ .shadow-on-hover:hover{
+   box-shadow: 0 10px 40px rgba(157, 153, 153, 0.1);
+ }
+
+
+ .btn{
+    border-radius: 0;
+    padding: 14px 38px;
+ }
+
+ .btn-brand{
+    color: white;
+    font-weight: 500;
+    border-color: #F58d17;
+    background-color: #F58d17;
+ }
+
+ .btn-brand:hover{
+    border-color: #bf6703;
+    background-color: #bf6703;
+    color: white;
+ }
+
+ .bg-cover{
+   background-position: center !important;
+   background-size: cover !important;
+   background-repeat: no-repeat !important;
+}
+
+#about.divider{
+   width: 60px;
+   height: 2px;
+   display: block;
+   background-color: #F58d17;
+}
+
+ .intro-text{
+   margin-bottom: 40px;
+   text-align: center;
+ }
+
+ .intro-text p{
+   max-width: 500px;
+   margin: 16px auto 0 auto;
+ }
+ 
+
+ #services{
+   background: linear-gradient(#0208337b, #0c022386), url(../try/images/why\ to\ choose\ us.jpg);
+ }
+
+ .feature{
+   border: 2px solid rgba(245, 222, 179, 0.31);
+ }
+
+ .feature .feature-icon{
+   width: 80px;
+   height: 80px;
+   background-color: #F58d17;
+   color: white;
+   font-size: 28px;
+   display: inline-grid;
+   align-content: center;
+   text-align: center;
+ }
+
+ .team-member img{
+   max-width: 140px;
+   box-shadow: -10px -10px 0 #F58d17;
+   border-radius: 100px;
+ }
+
+ #reviews{
+   background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../try/images/customer.jpg);
+}
+
+.review img{
+   width: 75px;
+   height: 75px;
+   object-fit: cover;
+}
+
+.review .quote-icon{
+   font-size: 74px;
+   color: #F58d17;
+   line-height: 1;
+}
+
+.review .stars{
+   color: #F58d17;
+}
+
+#review .carousel-indicators{
+   margin-bottom: 2px;
+}
+
+#reservation .form-control{
+   border-radius: 0;
+}
+
+#reservation .form-control:focus{
+   box-shadow: none;
+   border-color: #F58d17;
+}
+
+#reservation input.form-control{
+   height: 47px;
+}
+
+@media (max-width:768px){
+   .ytchannel{
+      flex-direction: column;
+   }
+   .ytchannel img{
+      width: 100%;
+   }
+}
