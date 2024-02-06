@@ -20,25 +20,25 @@ A brief description of the web development project.
 - [ ] Feature 2 (Full Name): User editing and deleting data
 - [ ] Feature 3 (Full Name): Book Table
 - [ ] Feature 4 (Full Name): Add reviews
-- [ ] Feature 5 (Full Name): Oeder online
+- [ ] Feature 5 (Full Name): Order online
 
-### Feature 1
+### Feature 1 - User Registration
 
 User can register- name, email, address, phone. click on log in. open in new php. enter email and password. new user. click on sign up. enter personal data. click on register. diplay successfully registered.
 
-### Feature 2
+### Feature 2 - User editing and deleting data
 
 User can log in and edit/delete his/her data and add reviews. view my orders.
 
-### Feature 3
+### Feature 3 - Book Table
 
 Non-user or user can book a table- date,time,name, phone,email. Once a reservation is made.seperate php page wil be opended and display reservation details.
 
-### Feature 4
+### Feature 4 - Add reviews
 
 user can add reviews(comments+images)- user must log in (or log in optional).
 
-### Feature 5
+### Feature 5 - Order online
 
 onile order- user can click on onilne order(new nav button). new php page displaying delivery or pick up. click on deliver. delivery information form will be displayed in the same php.once submit. show order details. same applies to pick up as well.
 
