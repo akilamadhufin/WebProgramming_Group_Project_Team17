@@ -46,9 +46,11 @@ onile order- user can click on onilne order(new nav button). new php page displa
 
 ## Database Tables
 
-- Table 1 (Created By): Table Name 
-- Table 2 (Created By): Table Name 
-- Table 3 (Created By): Table Name 
+- Table 1 (Created By): userRegistration
+- Table 2 (Created By): booking
+- Table 3 (Created By): review
+- Table 4 (Created By): orderDelivery
+- Table 4 (Created By): orderPickup
 
 > ER Diagram of the database. 
 
@@ -58,9 +60,12 @@ onile order- user can click on onilne order(new nav button). new php page displa
 
 List and describe any forms that have been created as part of the project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 2: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
-- Form 3: (Created By): Form Name: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 1 (Created By): userRegistrationForm: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
+- Form 2: (Created By): bookingForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 3: (Created By): addReviewForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 4: (Created By): orderDeliveryForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 5: (Created By): orderPickForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 6: (Created By): loginForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
 
 
 ---
