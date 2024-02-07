@@ -1,5 +1,16 @@
 
 Table 1 -
+CREATE TABLE `registrationinfo` (
+  `id` int NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL COMMENT 'UNIQUE',
+  `phone_number` varchar(50) NOT NULL,
+  `city` varchar(50) NOT NULL,
+  `city_code` int NOT NULL,
+  `enter_password` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `confirm_password` varchar(50) DEFAULT NULL
+)
 
 ---sql
 
