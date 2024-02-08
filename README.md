@@ -4,7 +4,7 @@
 
 # WEB PROGRAMMING_HOT POT - Team 17
 
-A brief description of the web development project.
+Welcome to "Hot Pot," an innovative web programming project brought to you by Team 17! Hot Pot is a dynamic and user-centric web application designed to revolutionize the way users discover, share, and indulge in their culinary preferences. Focused on the diverse world of hot pot cuisine, our platform aims to create a vibrant community of food enthusiasts, providing an immersive and interactive experience.
 
 ## Table of Contents
 - [Features](#features)
