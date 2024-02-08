@@ -1,6 +1,6 @@
 
 Table 1 - userRegistration -(Gimhani Garusing Arachchige) <br>
----sql<br>
+sql<br>
 ```
 CREATE TABLE `registrationinfo` (
   `id` int NOT NULL,
@@ -14,21 +14,21 @@ CREATE TABLE `registrationinfo` (
   `confirm_password` varchar(50) DEFAULT NULL
 ) <br>
 ```
----
+
 <br>
 Table 2 - booking -(Wasantha Hewa Walimunige) <br>
 
---sql<br>
+sql<br>
 ```
 
 ```
----
+
 <br>
 
 
 Table 3 - REVEIW FORM -(Thilini Gamage)<br>
 
----sql<br>
+sql<br>
 ```
 CREATE TABLE `customersinfo` (
   `name` varchar(50) NOT NULL,
@@ -39,11 +39,11 @@ CREATE TABLE `customersinfo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 <br>
 ```
----
+
 <br>
 
 Table 4 - orderDelivery -(Akila Randunu Pathirannehelage)<br>
----sql<br>
+sql<br>
 ```
 CREATE TABLE `deliveryData` (
   `deliveryOrderId` int NOT NULL,
@@ -61,10 +61,10 @@ CREATE TABLE `deliveryData` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```
----- <br>
+<br>
 
 Table 4 - orderPickup -(Akila Randunu Pathirannehelage)<br>
----sql<br>
+sql<br>
 ```
 CREATE TABLE `pickupData` (
   `pickupOrderId` int NOT NULL,
@@ -80,4 +80,4 @@ CREATE TABLE `pickupData` (
   `pickupMessage` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 ```
----<br>
+<br>
