@@ -1,6 +1,6 @@
 
 Table 1 - userRegistration -(Gimhani Garusing Arachchige) <br>
-sql<br>
+sql
 ```
 CREATE TABLE `registrationinfo` (
   `id` int NOT NULL,
@@ -12,23 +12,23 @@ CREATE TABLE `registrationinfo` (
   `city_code` int NOT NULL,
   `enter_password` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `confirm_password` varchar(50) DEFAULT NULL
-) <br>
+) 
 ```
 
-<br>
+
 Table 2 - booking -(Wasantha Hewa Walimunige) <br>
 
-sql<br>
+sql
 ```
 
 ```
 
-<br>
+
 
 
 Table 3 - REVEIW FORM -(Thilini Gamage)<br>
 
-sql<br>
+sql
 ```
 CREATE TABLE `customersinfo` (
   `name` varchar(50) NOT NULL,
@@ -37,13 +37,11 @@ CREATE TABLE `customersinfo` (
   `rating` varchar(50) NOT NULL,
   `id` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-<br>
+
 ```
 
-<br>
-
 Table 4 - orderDelivery -(Akila Randunu Pathirannehelage)<br>
-sql<br>
+sql
 ```
 CREATE TABLE `deliveryData` (
   `deliveryOrderId` int NOT NULL,
@@ -61,10 +59,9 @@ CREATE TABLE `deliveryData` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 ```
-<br>
 
 Table 4 - orderPickup -(Akila Randunu Pathirannehelage)<br>
-sql<br>
+sql
 ```
 CREATE TABLE `pickupData` (
   `pickupOrderId` int NOT NULL,
