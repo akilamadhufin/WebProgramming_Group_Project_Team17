@@ -20,6 +20,21 @@ Table 2 - booking -(Wasantha Hewa Walimunige) <br>
 
 sql
 ```
+CREATE TABLE `reservation` (
+  `orderid` int NOT NULL,
+  `fname` varchar(50) NOT NULL,
+  `lname` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `date` date NOT NULL,
+  `time` time NOT NULL,
+  `numberOfPersons` int NOT NULL,
+  `message` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+ALTER TABLE `reservation`
+  ADD PRIMARY KEY (`orderid`),
+  ADD UNIQUE KEY `email` (`email`);
+ALTER TABLE `reservation`
+  MODIFY `orderid` int NOT NULL AUTO_INCREMENT;
 
 ```
 
