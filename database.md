@@ -1,5 +1,5 @@
 
-Table 1 - userRegistration -(Gimhani Garusing Arachchige)
+Table 1 - userRegistration -(Gimhani Garusing Arachchige) <br>
 ---sql
 CREATE TABLE `registrationinfo` (
   `id` int NOT NULL,
