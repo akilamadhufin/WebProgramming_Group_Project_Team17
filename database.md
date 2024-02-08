@@ -1,5 +1,6 @@
 
-Table 1 -
+Table 1 - userRegistration -(Gimhani Garusing Arachchige)
+---sql
 CREATE TABLE `registrationinfo` (
   `id` int NOT NULL,
   `first_name` varchar(50) NOT NULL,
@@ -12,10 +13,11 @@ CREATE TABLE `registrationinfo` (
   `confirm_password` varchar(50) DEFAULT NULL
 )
 
+---
+
+Table 3 - REVEIW FORM -(Thilini Gamage)
+
 ---sql
-
-Table 3-REVEIW FORM
-
 CREATE TABLE `customersinfo` (
   `name` varchar(50) NOT NULL,
   `phone_number` varchar(50) NOT NULL,
