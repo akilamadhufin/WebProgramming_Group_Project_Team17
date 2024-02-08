@@ -14,7 +14,7 @@ CREATE TABLE `registrationinfo` (
 
 ---sql
 
-Table 3 
+Table 3-REVEIW FORM
 
 CREATE TABLE `customersinfo` (
   `name` varchar(50) NOT NULL,
