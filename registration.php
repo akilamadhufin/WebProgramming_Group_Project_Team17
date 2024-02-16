@@ -75,8 +75,10 @@ document.getElementById("confirm_password").addEventListener("input", validatePa
             $city = $_POST['city'];
             $citycode = $_POST['citycode'];
             $phoneNum = $_POST['phoneNum'];
+            $userType = $_POST['user_type'];
+            $confirmpassword = md5($_POST['confirmpassword']);
             $password = md5($_POST['password']);
-            $userType = md5($_POST['user_type']);
+           
             
             $sql = "insert into reginfo (fname,lname,email,city,citycode,phoneNum,password,user_type) 
             values('$fname','$lname','$email','$city','$citycode','$phoneNum','$password','$userType')" ;
@@ -84,12 +86,9 @@ document.getElementById("confirm_password").addEventListener("input", validatePa
             if($conn->query($sql)===TRUE){
               
               echo '<script>alert("Your data was successfully recorded"); window.location.href = "loginform.php";</script>';
-              
+           //   
             exit();
               }
-            }
-            else{
-              echo '<script>alert("Error in submitting: ' . $conn->error . '");</script>';
             }
             
       
