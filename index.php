@@ -1,6 +1,16 @@
 <?php
+session_start();
+include 'auth.php';
 $title = "HOT POT home";
-include_once 'header.php'; ?>
+include 'db.php';
+
+if (isset($_SESSION['authenticated']) && $_SESSION['authenticated'] === true) {
+    include 'regUserHeader.php';
+} else {
+    include 'header.php';
+}
+?>
+
       <div id="heroslider" class="carousel slide">
         <div class="carousel-inner">
           <div class="carousel-item text-center  bg-cover vh-100 active slide-1">
@@ -787,10 +797,13 @@ include_once 'header.php'; ?>
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>
+        <div style="margin-top:10px;" class="form-group col-md-12 text-center">
+        <a href="addReviews.php" class="btn btn-brand">Add Reviews</a>
         </div>
 
       </section>
+
       <section id="reservation">
         <div class="container">
           <div class="row">
@@ -800,31 +813,68 @@ include_once 'header.php'; ?>
 
             </div>
           </div>
-          <form action="#" class="row justify-content-center">
+          <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="row justify-content-center" name="addReservation" id="addReservation" method="post">
             <div class="col-lg-8">
               <div class="row g-3">
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Full name">
+                  <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="email" class="form-control" placeholder="Email Address">
+                  <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="date" class="form-control" placeholder="Date">
+                  <input type="email" class="form-control" placeholder="Email Address" id="email" name="email" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Number of Persons">
+                  <input type="text" class="form-control" placeholder="Contact Number" id="phoneNum" name="phoneNum" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="date" class="form-control" placeholder="Date" id="resDate" name="resDate" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="Time" class="form-control" placeholder="Time" id="resTime" name="resTime" required> 
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="Number of Persons" id="numOfPersons" name="numOfPersons" required>
                 </div>
                 <div class="form-group col-md-12">
-                  <textarea name="message" id="message" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
+                  <textarea cols="30" rows="4" class="form-control" placeholder="Message" id="message" name="message"></textarea>
                 </div>
                 <div class="form-group col-md-12 text-center">
-                  <a href="#" class="btn btn-brand">Book Now</a>
+                  <button class="btn btn-brand" name="addReservation" id="addReservation">Book Now</button>
                 </div>
               </div>
             </div>
           </form>
         </div>
+
+        <?php
+
+          if(isset($_POST['addReservation'])){
+            $fname = $_POST['fname'];
+            $lname = $_POST['lname'];
+            $email = $_POST['email'];
+            $phoneNum = $_POST['phoneNum'];
+            $resDate = $_POST['resDate'];
+            $resTime = $_POST['resTime'];
+            $numOfPersons = $_POST['numOfPersons'];
+            $message = $_POST['message'];
+            
+            $submitreservationsql = "insert into reservation (fname,lname,email,phoneNum,resDate,resTime,numOfPersons,message) 
+            values('$fname','$lname','$email','$phoneNum','$resDate','$resTime','$numOfPersons','$message')" ;
+        
+            if($conn->query($submitreservationsql)===TRUE){
+                echo "<script>window.alert('Your data was successfully recorded');</script>";
+            }
+            else{
+              echo "<script>window.alert('Error in submitting: " . $conn->error . "');</script>";
+            }
+            
+            } 
+            // close the connection when done
+            $conn->close();   
+    
+?>
 
       </section>
       <div class="row g-0">
@@ -930,4 +980,4 @@ include_once 'header.php'; ?>
         </div>
       </section>
 
-      <?php include_once 'footer.php' ?>
+      <?php include 'footer.php' ?>

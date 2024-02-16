@@ -1,32 +1,40 @@
 <?php
-$title = "Pickup Order";
-include_once 'header.php';
-include 'db.php'; ?>
+include 'auth.php';
+$title = "HOT POT Pickup";
+include 'db.php';
+include ($_SESSION['authenticated'] && $_SESSION['authenticated'] === true) ? 'regUserHeader.php' : 'header.php';
+?>
 
-<section id="deliver" style="padding-top: 20px; padding-bottom: 120px;">
+<section id="pickup" style="padding-top: 20px; padding-bottom: 120px;">
         <div class="container">
             <div class="row">
             <div class="col-12 intro-text">
-              <h1>Book your Pickup</h1>
-              <p>
-Introducing HOT POT's convenient online order pickup service! Experience the ultimate fusion of flavor from the comfort of your home with our delectable hot pot creations. Simply browse our diverse menu, place your order online, and swing by our restaurant at your convenience to pick up your freshly prepared feast. Skip the wait and savor the tantalizing tastes of HOT POT, where exceptional cuisine meets seamless online ordering for a dining experience that's both delicious and efficient.</p>
-
+              <h1>Make your Pickup</h1>
+              <p>Introducing HOT POT's convenient online order pickup service! Experience the ultimate fusion of flavor from the comfort of your home with our delectable hot pot creations. Simply browse our diverse menu, place your order online, and swing by our restaurant at your convenience to pick up your freshly prepared feast. Skip the wait and savor the tantalizing tastes of HOT POT, where exceptional cuisine meets seamless online ordering for a dining experience that's both delicious and efficient.</p>
             </div>
             </div>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" class="row justify-content-center" name="pickupInfor" method="post">
             <div class="col-lg-8">
               <div class="row g-3">
+
+
+              <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="first name" id="fname" name="fname" required>
+                <p id="fnameError"></p>
+              </div>
+
+              <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="last name" id="lname" name="lname" required>
+                <p id="lnameError"></p>
+              </div>
+
+              <div class="form-group col-md-6">
+                  <input type="text" class="form-control" placeholder="phone Number" id="phoneNum" name="phoneNum" required>
+                <p id="phoneNumError"></p>
+              </div>
+
                 <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Last Name"  id="lname" name="lname" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Email Address" id="pickupEmail" name="pickupEmail" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <input type="text" class="form-control" placeholder="Contact Number" id="phoneNum" name="phoneNum" required>
+                  <input type="email" class="form-control" placeholder="Email Address" id="pickupEmail" name="pickupEmail" required>
                 </div>
                 <div class="form-group col-md-6">
                   <input type="date" class="form-control" placeholder="Date" id="pickupDate" name="pickupDate" required>
@@ -34,7 +42,6 @@ Introducing HOT POT's convenient online order pickup service! Experience the ult
                 <div class="form-group col-md-6">
                     <input type="time" class="form-control" id="pickupTime" name="pickupTime" placeholder="Select a time" required>
                 </div>
-
             </div>
             <div class="row" style="margin-top: 16px;">
                 <div class="form-group col-md-4">
@@ -78,77 +85,38 @@ Introducing HOT POT's convenient online order pickup service! Experience the ult
           </form>
 
           <?php
-
           if(isset($_POST['orderNow'])){
             $fname = $_POST['fname'];
             $lname = $_POST['lname'];
-            $pickupEmail = $_POST['pickupEmail'];
             $phoneNum = $_POST['phoneNum'];
+            $pickupEmail = $_POST['pickupEmail'];
             $pickupDate = $_POST['pickupDate'];
             $pickupTime = $_POST['pickupTime'];
             $mealName = $_POST['mealName'];
             $portionSize = $_POST['portionSize'];
             $addMore = $_POST['addMore'];
             $pickupMessage = $_POST['pickupMessage'];
-            include 'db.php';
+
+            $checkEmail = "SELECT fname,lname,email,phoneNum,city,citycode FROM reginfo WHERE email = '$pickupEmail'";
+            $checkEmailResult = $conn->query($checkEmail);
         
-            $sql = "insert into pickupData (fname,lname,pickupEmail,phoneNum,pickupDate,pickupTime,mealName,portionSize,addMore,pickupMessage) 
-            values('$fname','$lname','$pickupEmail','$phoneNum','$pickupDate','$pickupTime','$mealName','$portionSize','$addMore','$pickupMessage')" ;
+            if ($checkEmailResult->num_rows == 0) {
+              echo "<script>window.alert('Please provide the email address you used to register.');</script>";
+
+            } else {
+        
+            $sql = "insert into pickupData (fname,lname, phoneNum, pickupEmail,pickupDate,pickupTime,mealName,portionSize,addMore,pickupMessage) 
+            values('$fname','$lname','$phoneNum','$pickupEmail','$pickupDate','$pickupTime','$mealName','$portionSize','$addMore','$pickupMessage')" ;
         
             if($conn->query($sql)===TRUE){
-                echo "Your data was successfully recorded";
+              echo "<script>window.alert('Your data was successfully recorded');</script>";
+
             }
             else{
                 echo "Error in submitting: " .$sql. "<br>" . $conn->error;
             }
             }
-
-            $sql = "SELECT * FROM pickupData";
-
-            // Execute the SQL query and store the result
-            $result = $conn->query($sql);
-
-            // Check if there are any results
-            if ($result->num_rows > 0) {
-                echo "<table class='table'>
-                        <thead>
-                            <tr>
-                                <th>Order ID</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>email</th>
-                                <th>Contact Number</th>
-                                <th>pickup Date</th>
-                                <th>pickup Time</th>
-                                <th>Meal Ordered</th>
-                                <th>Portion Size</th>
-                                <th>Number of items</th>
-                                <th>Message</th>
-                            </tr>
-                        </thead>
-                        <tbody>";
-
-                // Loop through the result set and display data in rows
-                while ($row = $result->fetch_assoc()) {
-                    echo "<tr>
-                            <td><a href='updateOrder.php?id=$row[pickupOrderId]' style='color:red;'>$row[pickupOrderId]</a></td>
-                            <td>{$row['fname']}</td>
-                            <td>{$row['lname']}</td>
-                            <td>{$row['pickupEmail']}</td>
-                            <td>{$row['phoneNum']}</td>
-                            <td>{$row['pickupDate']}</td>
-                            <td>{$row['pickupTime']}</td>
-                            <td>{$row['mealName']}</td>
-                            <td>{$row['portionSize']}</td>
-                            <td>{$row['addMore']}</td>
-                            <td>{$row['pickupMessage']}</td>
-                          </tr>";
-                }
-                echo "</tbody></table>";
-            } else {
-                // Display a message if no results are found
-                echo "No results";
-            }
+          }
             // close the connection when done
             $conn->close();   
           ?>
@@ -157,5 +125,4 @@ Introducing HOT POT's convenient online order pickup service! Experience the ult
       </section>
 
 
-
-<?php include_once 'footer.php'; ?>
+<?php include 'footer.php'; ?>

@@ -45,8 +45,24 @@
              
             </ul>
             <div class="d-flex" style="justify-content: flex-end;">
-            <a href="loginform.php" class="btn btn-brand position-relative me-3">Login</a>
-          </div>
-          </div>
+                    <div class="nav-item dropdown">
+                        <button class="btn btn-brand position-relative me-3 nav-link dropdown-toggle" id="accountDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            My Account
+                            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">New Alerts</span>
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                            <li><a class="dropdown-item" href="myAccount.php">Account Settings</a></li>
+                            <li><a class="dropdown-item" href="myOrder.php">My Orders</a></li>
+                            <li><a class="dropdown-item" href="myReservations.php">Reservations</a></li>
+                            <li><a class="dropdown-item" href="myReview.php">Reviews</a></li>
+                            <li><a class="dropdown-item" href="loginform.php">Login to Another Account</a></li>
+                            <li><a class="dropdown-item" href="logout.php">Logout</a></li>
+                        </ul>
+                    </div>
+                    <a href="onlineOrder.php" class="btn btn-brand ms-auto">Order Online</a>
+                </div>
+            </div>
         </div>
-      </nav>
+    </nav>
