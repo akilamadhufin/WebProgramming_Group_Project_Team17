@@ -16,7 +16,7 @@ Welcome to "Hot Pot," an innovative web programming project brought to you by Te
 
 ## Features
 
-- [ ] Feature 1 (Gimhani Garusing Arachchige): User Registration
+- [ ] Feature 1 (Gimhani Garusing Arachchige): User Registration with different user interface.
 - [ ] Feature 2 (Gimhani Garusing Arachchige): User editing and deleting data
 - [ ] Feature 3 (Wasantha Hewa Walimunige): Book Table
 - [ ] Feature 4 (Thilini Gamage): Add reviews
