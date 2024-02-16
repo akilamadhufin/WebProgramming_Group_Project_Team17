@@ -33,11 +33,11 @@ User can log in and edit/delete his/her data and add reviews. view my orders.
 
 ### Feature 3 - Book Table
 
-Non-user or user can book a table- date,time,name, phone,email. Once a reservation is made.seperate php page wil be opended and display reservation details.
+user can book a table- date,time,name, phone,email. Once a reservation is made.seperate php page wil be opended and display reservation details.
 
 ### Feature 4 - Add reviews
 
-user can add reviews(comments+images)- user must log in (or log in optional).
+user can add reviews(comments)- user must log in (or log in optional).
 
 ### Feature 5 - Order online
 
