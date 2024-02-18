@@ -62,7 +62,7 @@ onile order- user can click on onilne order(new nav button). new php page displa
 List and describe any forms that have been created as part of the project. Include details about the purpose of each form and any validation logic.
 
 - Form 1 (Gimhani Garusing Arachchige): userRegistrationForm & login form: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
-- Form 2: (Wasantha Hewa Walimunige): bookingForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 2: (Wasantha Hewa Walimunige): bookingForm: Link to the related code file (github - https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/allReservations.php) | Link to the form (shell.hamk.fi).  | Validations Applied
 - Form 3: (Thilini Gamage): addReviewForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
 - Form 4: (Akila Randunu Pathirannehelage): orderDeliveryForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
 - Form 5: (Akila Randunu Pathirannehelage): orderDeliveryorderPickForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
