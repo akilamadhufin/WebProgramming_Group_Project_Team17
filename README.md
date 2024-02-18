@@ -20,8 +20,8 @@ Welcome to "Hot Pot," an innovative web programming project brought to you by Te
 - [ ] Feature 2 (Gimhani Garusing Arachchige): User editing and deleting data
 - [ ] Feature 3 (Wasantha Hewa Walimunige): Book Table
 - [ ] Feature 4 (Thilini Gamage): Add reviews
-- [ ] Feature 5 (Akila Randunu Pathirannehelage): Order online- Delivery
-- [ ] Feature 6 (Akila Randunu Pathirannehelage): Order online- pickup
+- [ ] Feature 5 (Akila Randunu Pathirannehelage): Order online- Delivery, edit delete order data
+- [ ] Feature 6 (Akila Randunu Pathirannehelage): Order online- pickup, edit delete order data
 
 ### Feature 1 - User Registration
 
@@ -64,8 +64,8 @@ List and describe any forms that have been created as part of the project. Inclu
 - Form 1 (Gimhani Garusing Arachchige): userRegistrationForm & login form: Link to the related code file (github) | Link to the form (shell.hamk.fi). | Validations Applied
 - Form 2: (Wasantha Hewa Walimunige): bookingForm: Link to the related code file (github - https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/allReservations.php) | Link to the form (shell.hamk.fi).  | Validations Applied
 - Form 3: (Thilini Gamage): addReviewForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
-- Form 4: (Akila Randunu Pathirannehelage): orderDeliveryForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
-- Form 5: (Akila Randunu Pathirannehelage): orderDeliveryorderPickForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
+- Form 4: (Akila Randunu Pathirannehelage): orderDeliveryForm: Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/deliver.php) | Link to the form (http://shell.hamk.fi/~akila23000/WebProgramming/HOTPOT_Website_Group17/deliver.php).  | Validations Applied
+- Form 5: (Akila Randunu Pathirannehelage): orderDeliveryorderPickForm: Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/pickup.php) | Link to the form (http://shell.hamk.fi/~akila23000/WebProgramming/HOTPOT_Website_Group17/pickup.php).  | Validations Applied
 - Form 6: (Gimhani Garusing Arachchige): loginForm: Link to the related code file (github) | Link to the form (shell.hamk.fi).  | Validations Applied
 
 
@@ -77,8 +77,8 @@ List and describe any forms that have been created as part of the project. Inclu
 - Table 1 (Gimhani Garusing Arachchige): userRegistration | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 2 (Wasantha Hewa Walimunige): booking | Link to the related code file (github) | Link to the table (shell.hamk.fi).
 - Table 3 (Thilini Gamage): review | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 4 (Akila Randunu Pathirannehelage): orderDelivery | Link to the related code file (github) | Link to the table (shell.hamk.fi).
-- Table 5 (Akila Randunu Pathirannehelage): orderPickup | Link to the related code file (github) | Link to the table (shell.hamk.fi).
+- Table 4 (Akila Randunu Pathirannehelage): orderDelivery | Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md) | Link to the table (http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_akila23000&table=deliveryData).
+- Table 5 (Akila Randunu Pathirannehelage): orderPickup | Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md) | Link to the table (http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_akila23000&table=pickupData).
 
 ---
 
