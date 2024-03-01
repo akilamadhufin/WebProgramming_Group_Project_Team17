@@ -81,13 +81,9 @@ List and describe any forms that have been created as part of the project. Inclu
   - Form 10: (Thilini Gamage): admin editing or deleting review: Link to the related code file (github)(https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/addReviews.php) | Link to the form (shell.hamk.fi).  | HTML and Java script Validations(http://shell.hamk.fi/~thilini23002/project/addReviews.php)
   
 - Form 11: (Akila Randunu Pathirannehelage): edting items in the cart: Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/cart.php) | Link to the form (http://shell.hamk.fi/~akila23000/WebProgramming/HOTPOT_Website_Group17/cart.php).  | HTML and Java script Validations
-- 
 - Form 12: (Akila Randunu Pathirannehelage): checkout form: Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/checkout.php) | Link to the form (http://shell.hamk.fi/~akila23000/WebProgramming/HOTPOT_Website_Group17/checkout.php).  | HTML and Java script Validations
-- 
 - Form 13: (Akila Randunu Pathirannehelage): user editing/deleting order details: Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/myOrder.php) | Link to the form (http://shell.hamk.fi/~akila23000/WebProgramming/HOTPOT_Website_Group17/myOrder.php).  | HTML and Java script Validations
-- 
 - Form 14: (Akila Randunu Pathirannehelage): admin editing/deleting order details: Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/editProfile.php) | Link to the form (http://shell.hamk.fi/~akila23000/WebProgramming/HOTPOT_Website_Group17/allOrderDetails.php).  | HTML and Java script Validations
-- 
 - Form 15: (Akila Randunu Pathirannehelage): admin adding or editing items in the menu to display for users: Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/products.php) | Link to the form (http://shell.hamk.fi/~akila23000/WebProgramming/HOTPOT_Website_Group17/adminAddProducts.php).  | HTML and Java script Validations
 
 ---
