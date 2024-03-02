@@ -101,10 +101,10 @@ List and describe any forms that have been created as part of the project. Inclu
   
 - Table 3 (Thilini Gamage): customersinfo | Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md) | Link to the table (shell.hamk.fi).(http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_thilini23002&table=customersinfo)
   
-- Table 4 (Akila Randunu Pathirannehelage): orders | Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md) | Link to the table (http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_akila23000&table=deliveryData).
+- Table 4 (Akila Randunu Pathirannehelage): orders | Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md) | Link to the table (http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_akila23000&table=orders).
   
-- Table 5 (Akila Randunu Pathirannehelage): cart | Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md) | Link to the table (http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_akila23000&table=pickupData).
+- Table 5 (Akila Randunu Pathirannehelage): cart | Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md) | Link to the table (http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_akila23000&table=cart).
 
-- Table 6 (Akila Randunu Pathirannehelage): products | Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md) | Link to the table (http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_akila23000&table=pickupData).
+- Table 6 (Akila Randunu Pathirannehelage): products | Link to the related code file (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md) | Link to the table (http://shell.hamk.fi/pma/index.php?route=/table/structure&db=wp_akila23000&table=products).
 ---
 
