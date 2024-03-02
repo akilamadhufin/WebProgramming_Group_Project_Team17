@@ -75,8 +75,8 @@ List and describe any forms that have been created as part of the project. Inclu
 - (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/index.php)| Link to the form (http://shell.hamk.fi/~gimhani23000/project/index.php). | HTML and Java script Validations Applied
 
   
-- Form 5: (Wasantha Hewa Walimunige): reservation Form: Link to the related code file (github - https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/index.php) | Link to the form (http://shell.hamk.fi/~wasantha23000/WebProgramming/hotpotWebsite/allReservations.php).  | HTML and Java script Validations
-- Form 6: (Wasantha Hewa Walimunige): user editing/ deleting reservation data: Link to the related code file (github - https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/myReservations.php) | Link to the form (http://shell.hamk.fi/~wasantha23000/WebProgramming/hotpotWebsite/allReservations.php).  | HTML and Java script Validations
+- Form 5: (Wasantha Hewa Walimunige): reservation Form: Link to the related code file (github - https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/index.php) | Link to the form (http://shell.hamk.fi/~wasantha23000/WebProgramming/hotpotWebsite/index.php#reservation).  | HTML and Java script Validations
+- Form 6: (Wasantha Hewa Walimunige): user editing/ deleting reservation data: Link to the related code file (github - https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/myReservations.php) | Link to the form (http://shell.hamk.fi/~wasantha23000/WebProgramming/hotpotWebsite/myReservations.php).  | HTML and Java script Validations
 - Form 7: (Wasantha Hewa Walimunige): admin editing/ deleting reservation data: Link to the related code file (github - https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/allReservations.php) | Link to the form (http://shell.hamk.fi/~wasantha23000/WebProgramming/hotpotWebsite/allReservations.php).  | HTML and Java script Validations
 
   
