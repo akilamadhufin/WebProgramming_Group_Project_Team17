@@ -95,7 +95,7 @@ List and describe any forms that have been created as part of the project. Inclu
 ## Created Tables
 
 
-- Table 1 (Gimhani Garusing Arachchige): userRegistration | Link to the related code file (github) | Link to the table (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md)).
+- Table 1 (Gimhani Garusing Arachchige): userRegistration | Link to the related code file (github)(https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md)) | Link to the table (http://shell.hamk.fi/pma/index.php?route=/sql&pos=0&db=wp_gimhani23000&table=reginfo).
   
 - Table 2 (Wasantha Hewa Walimunige): reservation | Link to the related code file ([github](https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/database.md)) | Link to the table ([shell.hamk.fi](http://shell.hamk.fi/pma/index.php?route=/sql&db=wp_wasantha23000&table=reservation&pos=0)).
   
