@@ -65,10 +65,14 @@ Admin can add items ( images and other details) to display them in the menu for 
 
 List and describe any forms that have been created as part of the project. Include details about the purpose of each form and any validation logic.
 
-- Form 1 (Gimhani Garusing Arachchige): userRegistrationForm : Link to the related code file (github) | Link to the form (http://shell.hamk.fi/~gimhani23000/project/registration.php). | HTML and Java script Validations Applied
-- Form 2 (Gimhani Garusing Arachchige): login form : Link to the related code file (github) | Link to the form (http://shell.hamk.fi/~gimhani23000/project/loginform.php). | HTML and Java script Validations Applied 
-- Form 3 (Gimhani Garusing Arachchige): admin editing/ deleting user data: Link to the related code file (github) | Link to the form (http://shell.hamk.fi/~gimhani23000/project/adminBody.php). | HTML and Java script Validations Applied
-- Form 4 (Gimhani Garusing Arachchige): user editing/ deleting user data: Link to the related code file (github) | Link to the form (http://shell.hamk.fi/~gimhani23000/project/index.php). | HTML and Java script Validations Applied
+- Form 1 (Gimhani Garusing Arachchige): userRegistrationForm : Link to the related code file (github)
+- (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/registration.php)| Link to the form (http://shell.hamk.fi/~gimhani23000/project/registration.php). | HTML and Java script Validations Applied
+- Form 2 (Gimhani Garusing Arachchige): login form : Link to the related code file (github)
+- (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/loginform.php)| Link to the form (http://shell.hamk.fi/~gimhani23000/project/loginform.php). | HTML and Java script Validations Applied 
+- Form 3 (Gimhani Garusing Arachchige): admin editing/ deleting user data: Link to the related code file (github)
+- (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/adminBody.php)| Link to the form (http://shell.hamk.fi/~gimhani23000/project/adminBody.php). | HTML and Java script Validations Applied
+- Form 4 (Gimhani Garusing Arachchige): user editing/ deleting user data: Link to the related code file (github)
+- (https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/index.php)| Link to the form (http://shell.hamk.fi/~gimhani23000/project/index.php). | HTML and Java script Validations Applied
 
   
 - Form 5: (Wasantha Hewa Walimunige): reservation Form: Link to the related code file (github - https://github.com/akilamadhufin/WebProgramming_Group_Project_Team17/blob/main/index.php) | Link to the form (http://shell.hamk.fi/~wasantha23000/WebProgramming/hotpotWebsite/allReservations.php).  | HTML and Java script Validations
